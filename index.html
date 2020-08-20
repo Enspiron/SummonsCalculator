@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Total Summons Calculator</title>
+</head>
+<body>
+    <form onsubmit="Calculate(event)" class='form'>
+        <h1>Calculator</h1>
+        <label>Total Wyrmite</label>
+        <input type="number" value='0' name="Wyrmite" id="Wyrmmite"/><br/><br/>
+        <label>Total Single Tickets</label>
+        <input type="number" value='0' name="Singles" id="Singles"/><br/><br/>
+        <label>Total Tenfolds</label>
+        <input type="number" value='0' name="Tenfolds" id="Tenfolds"><br/><br/>
+        <input type="submit" value="Calculate">
+    </form>
+    <div class='result'>
+        <h1>Total Summons:</h1>
+        <h3 id='Total'>0</h3>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
