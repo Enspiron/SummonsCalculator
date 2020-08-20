@@ -12,9 +12,13 @@ function CalculateFromAdv(Adventurers) {
     return(Adventurers*55)
 }
 
+function CalculateFromCastle(CastleStories) {
+    return(CastleStories*50)
+}
+
 function Calculate(e) {
     e.preventDefault();
-    let Total = (CalculateFromWyrmite(e.target.Wyrmite.value) + CalculateFromTenfolds(e.target.Tenfolds.value)) + parseInt(e.target.Singles.value) + Math.floor(parseInt(CalculateFromAdv(e.target.Stories.value)/120))
+    let Total = (CalculateFromWyrmite(e.target.Wyrmite.value) + CalculateFromTenfolds(e.target.Tenfolds.value)) + parseInt(e.target.Singles.value) + Math.floor(parseInt(CalculateFromAdv(e.target.Stories.value)/120)) + Math.floor(parseInt(CalculateFromCastle(e.target.Castle.value)/120))
 
     console.dir(e.target.Wyrmite.value)
     TotalValue.innerText = Total;
